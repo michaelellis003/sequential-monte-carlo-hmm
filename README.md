@@ -6,6 +6,10 @@ Master's thesis submitted in partial fulfillment of the requirements for the deg
 
 In many applications data are collected sequentially in time with very short time intervals between observations. If one is interested in using new observations as they arrive in time then non-sequential Bayesian inference methods, such as Markov Chain Monte Carlo (MCMC) sampling, can be too slow. Increasingly, state space models are being used to model nonlinear and non-Gaussian systems. The structure of state space models allows for sequential Bayesian inference so that an approximation to the posterior distribution of interest can be updated as new observations arrive. In special cases, the exact posterior distribution can be updated through conjugate Bayesian inference. However, for the general state space model this is not possible. In quantitative finance hidden Markov models have been used to analyze and forecast percent log returns of an asset or a group of assets. In this thesis the Liu and West (2001) auxiliary particle filter is applied to sequentially update the posterior distribution of a hidden Markov model with unknown state and observation distribution parameters.
 
+## Implementation
+
+The methods from this thesis are implemented in [**smcjax**](https://github.com/michaelellis003/smcjax) — a JAX library providing bootstrap, auxiliary, and Liu-West particle filters with full Bayesian workflow diagnostics. See the smcjax [notebooks](https://github.com/michaelellis003/smcjax/tree/main/notebooks) for a reproduction of the thesis experiments.
+
 ## Contents
 
 - [Full Thesis (PDF)](Sequential%20Inference%20for%20Hidden%20Markov%20Models.pdf)
